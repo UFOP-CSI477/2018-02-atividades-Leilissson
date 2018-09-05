@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        input{
+            margin-bottom:10px;
+
+        }
+        select{
+            margin-bottom: 10px;
+        }
+    </style>
+
+</head>
+<body>
+<!-- The sidebar -->
+<div class="sidebar">
+    <a class="active" href="index.html">Home</a>
+    <a href="form.html">Cadastrar</a>
+    <a href="table.html">Listar</a>
+    <a href="https://www.google.com/">Sair</a>
+</div>
+
+<!-- Page content -->
+<div class="content">
+    <form method="post" action="form.html">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" placeholder="Nome da Pessoa">
+
+        <br>
+
+        <label for="endereco">Endereço</label>
+        <input type="text" name="endereco" id="endereco">
+        <br>
+
+        <label for="telefone">Telefone</label>
+        <input type="text" name="telefone" maxlength="16" placeholder="Utilize o formato (099) 9999 9999" id="telefone">
+        <br>
+
+        <label id="genero">Gênero</label>
+
+        <input type="radio" id="feminino" name="genero">
+        <label for="feminino">Feminino</label>
+
+        <input type="radio" id="masculino" name="genero">
+        <label for="masculino">Masculino</label>
+
+        <input type="radio" id="naobinario" name="genero">
+        <label for="naobinario">Não Binário</label>
+
+        <br>
+
+        <label id="area">Áreas de interesse</label>
+
+        <input type="checkbox" id="web" name="area">
+        <label for="web">Desenvolvimento web</label>
+
+        <input type="checkbox" id="bd" name="area">
+        <label for="bd">Banco de dados</label>
+
+        <input type="checkbox" id="otim" name="area">
+        <label for="otim">Otimização</label>
+
+        <br>
+
+        <label id="cidade">Cidade</label>
+
+        <select name="cidade">
+            <option value="0">Selecione</option>
+            <option value="1">João Monelevade</option>
+            <option value="2">Itabira</option>
+            <option value="3" selected >Governador Valadares</option>
+            <option value="4">Ipatinga</option>
+            <option value="5">Belo Horizonte</option>
+        </select>
+
+        <br>
+
+        <label for="usuario">Usuàrio</label>
+        <input type="text" name="usuario" id="usuario">
+
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha">
+
+        <br>
+
+        <input type="submit" value="cadastar">
+        <input type="reset" value="Limpar">
+
+
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Listar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- The sidebar -->
+<div class="sidebar">
+    <a class="active" href="index.html">Home</a>
+    <a href="form.html">Cadastrar</a>
+    <a href="table.html">Listar</a>
+    <a href="https://www.google.com/">Sair</a>
+</div>
+
+<!-- Page content -->
+<div class="content">
+    <h1>Lista de alunos matriculados na turma</h1>
+
+    <p class="maior">Aula no laboratorios H102</p>
+
+    <table>
+        <caption>Turma de WEB</caption>
+
+        <!-- Cbeçalho //-->
+        <thead>
+        <tr>
+            <th>Matricula</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Curso</th>
+            <th class="fundo">Turma</th>
+        </tr>
+        </thead>
+
+        <!--Dados //-->
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Ana</td>
+            <td>leiliss@teste.com</td>
+            <td>EJM</td>
+            <td rowspan="3">11</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>carlos</td>
+            <td>lcarlos@teste.com</td>
+            <td>CJM</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>vini</td>
+            <td>viini@teste.com</td>
+            <td>CJM</td>
+        </tr>
+        </tbody>
+
+        <tfoot>
+        <tr>
+            <td colspan="2">Total de pessoas: </td>
+            <td colspan="3">2</td>
+        </tr>
+        </tfoot>
+    </table>
+</div>
+</body>
+</html>
