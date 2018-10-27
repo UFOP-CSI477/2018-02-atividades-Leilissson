@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Form - validação jQuery</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <script src="jquery-3.3.1.js"></script>
+    <script src="form.js"></script>
+
+</head>
+
+<body>
+
+<div class="container" >
+
+    <form name="dados">
+        <label for="nome1" id="labelV1">Competidor 1</label>
+        <div class="form-inline" id="grupoV1">
+            <input type="text" name="nome1" value="" class="form-control mb-2 mr-sm-2 mb-sm-0" id="nome1" placeholder="Nome">
+
+            <div class="alert alert-danger" style="display: none" id="alertaV1">
+                <span>Informe o primeiro número corretamente!</span>
+            </div>
+
+
+            <input type="number" name="tempo1" value="" class="form-control mb-2 mr-sm-2 mb-sm-0" id="tempo1" placeholder="Tempo(s)">
+
+        </div>
+
+        <label for="nome2" id="labelV2">Competidor 2</label>
+        <div class="form-inline" id="grupoV2">
+            <input type="text" name="nome2" value="" class="form-control mb-2 mr-sm-2 mb-sm-2   " id="nome2" placeholder="Nome">
+
+            <div class="alert alert-danger" style="display: none" id="alertaV2">
+                <span>Informe o primeiro número corretamente!</span>
+            </div>
+
+
+            <input type="number" name="tempo2" value="" class="form-control mb-2 mr-sm-2 mb-sm-2" id="tempo2" placeholder="Tempo(s)">
+
+        </div>
+
+        <label for="nome3" id="labelV3">Competidor 3</label>
+        <div class="form-inline" id="grupoV3">
+            <input type="text" name="nome3" value="" class="form-control mb-2 mr-sm-2 mb-sm-2   " id="nome3" placeholder="Nome">
+
+            <div class="alert alert-danger" style="display: none" id="alertaV3">
+                <span>Informe o primeiro número corretamente!</span>
+            </div>
+
+
+            <input type="number" name="tempo3" value="" class="form-control mb-2 mr-sm-2 mb-sm-2" id="tempo3" placeholder="Tempo(s)">
+
+        </div>
+
+
+        <label for="nome4" id="labelV4">Competidor 4</label>
+        <div class="form-inline" id="grupoV4">
+            <input type="text" name="nome4" value="" class="form-control mb-2 mr-sm-2 mb-sm-2   " id="nome4" placeholder="Nome">
+
+            <div class="alert alert-danger" style="display: none" id="alertaV4">
+                <span>Informe o primeiro número corretamente!</span>
+            </div>
+
+
+            <input type="number" name="tempo4" value="" class="form-control mb-2 mr-sm-2 mb-sm-2" id="tempo4" placeholder="Tempo(s)">
+
+        </div>
+
+
+        <label for="nome5" id="labelV5">Competidor 5</label>
+        <div class="form-inline" id="grupoV5">
+            <input type="text" name="nome5" value="" class="form-control mb-2 mr-sm-2 mb-sm-2   " id="nome5" placeholder="Nome">
+
+            <div class="alert alert-danger" style="display: none" id="alertaV5">
+                <span>Informe o primeiro número corretamente!</span>
+            </div>
+
+
+            <input type="number" name="tempo5" value="" class="form-control mb-2 mr-sm-2 mb-sm-2" id="tempo5" placeholder="Tempo(s)">
+
+        </div>
+
+
+        <label for="nome6" id="labelV6">Competidor 6</label>
+        <div class="form-inline" id="grupoV6">
+            <input type="text" name="nome6" value="" class="form-control mb-2 mr-sm-2 mb-sm-2   " id="nome6" placeholder="Nome">
+
+            <div class="alert alert-danger" style="display: none" id="alertaV6">
+                <span>Informe o primeiro número corretamente!</span>
+            </div>
+
+
+            <input type="number" name="tempo6" value="" class="form-control mb-2 mr-sm-2 mb-sm-2" id="tempo6" placeholder="Tempo(s)">
+
+        </div>
+
+
+        <button type="button" class="btn btn-primary mb-sm-3 " name="cadastrar" id="btnCalcular">Cadastrar</button>
+
+    </form>
+
+</div>
+
+<div class="container">
+
+    <table class="table table-success" id="table-comp">
+        <thead>
+        <tr>
+            <th scope="col">Posição</th>
+            <th scope="col">Largada</th>
+            <th scope="col">Competidor(a)</th>
+            <th scope="col">Tempo</th>
+            <th scope="col">Resultado</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row" id="pos1"></th>
+            <td id="larg1"></td>
+            <td id="comp1"></td>
+            <td id="temp1"></td>
+            <td id="res1"></td>
+        </tr>
+        <tr>
+            <th scope="row" id="pos2"></th>
+            <td id="larg2"></td>
+            <td id="comp2"></td>
+            <td id="temp2"></td>
+            <td id="res2"></td>
+        </tr>
+
+        <tr>
+            <th scope="row" id="pos3"></th>
+            <td id="larg3"></td>
+            <td id="comp3"></td>
+            <td id="temp3"></td>
+            <td id="res3"></td>
+        </tr>
+        <tr>
+            <th scope="row" id="pos4"></th>
+            <td id="larg4"></td>
+            <td id="comp4"></td>
+            <td id="temp4"></td>
+            <td id="res4"></td>
+        </tr>
+
+
+        <tr>
+            <th scope="row" id="pos5"></th>
+            <td id="larg5"></td>
+            <td id="comp5"></td>
+            <td id="temp5"></td>
+            <td id="res5"></td>
+        </tr>
+        <tr>
+            <th scope="row" id="pos6"></th>
+            <td id="larg6"></td>
+            <td id="comp6"></td>
+            <td id="temp6"></td>
+            <td id="res6"></td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
